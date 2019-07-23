@@ -2,7 +2,7 @@
   <arg name="config" default="base" />
 
   <param name="robot_description"
-         command="$(find jackal_description)/scripts/env_run
+         command="$(find jackal_description)/scripts/env_run.bat
                     $(find jackal_description)/urdf/configs/$(arg config)
                     $(find xacro)/xacro $(find jackal_description)/urdf/jackal.urdf.xacro
                     --inorder" />
